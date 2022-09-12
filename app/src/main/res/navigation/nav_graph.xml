@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/points_loading_fragment">
+
+    <fragment
+        android:id="@+id/points_loading_fragment"
+        android:name="com.example.points.presentation.pointsLoading.PointsLoadingFragment"
+        android:label="PointsLoadingFragment">
+
+        <action
+            android:id="@+id/action_to_showing"
+            app:destination="@id/points_showing_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/points_showing_fragment"
+        android:name="com.example.points.presentation.pointsShowing.PointsShowingFragment"
+        android:label="PointsShowingFragment">
+
+        <argument
+            android:name="points"
+            app:argType="com.example.points.domain.model.Point[]" />
+    </fragment>
+</navigation>

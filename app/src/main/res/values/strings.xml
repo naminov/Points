@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Points</string>
+    <string name="count">Количество</string>
+    <string name="load">Поехали</string>
+    <string name="save">Сохранить</string>
+    <string name="error">Ошибка</string>
+    <string name="snapshot">Snapshot</string>
+</resources>
